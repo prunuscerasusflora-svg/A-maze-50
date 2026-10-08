@@ -29,19 +29,19 @@ COMPONENTS:
 %and when you click at that point on the screen, the confirmation panel appears and the timer pauses
                 state.pending_choice = 1; state.mode = 'CONFIRM_CHOICE'; state.pause_start 
 %to record the exact time at which the confirmation screen opens, so as to count down the time for confirmation once the player has clicked ‘Confirm’
-= tic();
+= time();
 %otherwise our cursor is positioned on the middle-hand arrow button corresponding to the next set of coordinates on the screen
          elseif x >= 41 && x <= 59 && y >= 36 && y <= 54
 %and when you click at that point on the screen, the confirmation panel appears and the timer pauses
              state.pending_choice = 2; state.mode = 'CONFIRM_CHOICE'; state.pause_start 
 %to record the exact time at which the confirmation screen opens, so as to count down the time for confirmation once the player has clicked ‘Confirm’
-= tic();
+= time();
 %otherwise our cursor is positioned on the right-hand arrow button corresponding to the next set of coordinates on the screen
            elseif x >= 62 && x <= 80 && y >= 36 && y <= 54
 %and when you click at that point on the screen, the confirmation panel appears and the timer pauses
                state.pending_choice = 3; state.mode = 'CONFIRM_CHOICE'; state.pause_start 
 %to record the exact time at which the confirmation screen opens, so as to count down the time for confirmation once the player has clicked ‘Confirm’
-= tic();
+= time();
 %end of the loop
          end
 
